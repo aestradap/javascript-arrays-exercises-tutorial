@@ -8,16 +8,7 @@ let people = [
 
 let simplifier = function(person) {
 	// Your code here
-	let age = calculate_age(person.birthDate);
-	return `Hello, my name is ${person.name} and I am ${age} years old`
+	return person.name;
 };
-
-function calculate_age(dob) { 
-    var diff_ms = Date.now() - dob.getTime();
-    var age_dt = new Date(diff_ms); 
-  
-    return Math.abs(age_dt.getUTCFullYear() - 1970);
-}
-
 
 console.log(people.map(simplifier));
