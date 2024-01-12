@@ -10,5 +10,3 @@ let tasks = [
 ];
 
 // Your code here
-const doneTasks = tasks.filter(task => task.done);
-console.log(doneTasks);
